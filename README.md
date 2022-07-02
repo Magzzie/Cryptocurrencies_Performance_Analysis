@@ -84,9 +84,6 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
     - We imported the PCA model from the scikit-learn library, then fit and transformed the scaled data. 
     - After this dimensionality reduction, we get a smaller set of three dimensions called principal components. 
     - These new components are just the three main dimensions of variation that contain most of the information in the original dataset.
-    
-        |![Principal Components DataFrame.](./Images/X_pca_df.png)|
-        |-|    
 
 
 
