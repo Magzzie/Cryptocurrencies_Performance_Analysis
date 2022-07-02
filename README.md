@@ -77,8 +77,8 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
     - The scaled crypto data contained 98 feature columns. That is considered a significant number to input into the classification algorithm. 
     - Hence, we used Principal Component Analysis, a complicated statistical technique, to reduce the number of dimensions (features) which would speed up the machine learning algorithm. 
     - We imported the PCA model from the scikit-learn library, then fit and transformed the scaled data. 
-    - After this dimensionality reduction, we get a smaller set of three dimensions called principal components. 
-    - These new components are just the three main dimensions of variation that contain most of the information in the original dataset.
+    - After this dimensionality reduction, we got a smaller set of three dimensions called principal components. 
+    - These new components were just the three main dimensions of variation that contained most of the information in the original dataset.
     
         |![Principal Components DataFrame.](./Images/X_pca_df.png)|
         |-|
