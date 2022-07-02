@@ -38,34 +38,45 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
 1. Preprocessing the data for PCA:
 - Using Pandas library and Jupyter Notebook, we processed the dataset in order to perform Principal Component Analysis in the next step:
     - We loaded the data file into a Pandas DataFrame and set the index equal to the original index in the data file. 
-    - The CryptoCompare dataset contained 1,252 records actively traded and untraded cryptocurrencies, arranged in 6 columns.
-    ![Original Crypto DataFrame.](./Images/crypto_original_df.png)
+    - The CryptoCompare dataset contained 1,252 records actively traded and untraded cryptocurrencies, arranged in 6 columns. <br>
     
-    - We Filtered the original currencies dataset based on active trading status and kept only traded currencies, 1,144. 
+        |![Original Crypto DataFrame.](./Images/crypto_original_df.png)|
+        |-|
     
-    ![Actively Traded Cryptocurrencies DataFrame.](./Images/crypto_traded_df.png)
+    - We Filtered the original currencies dataset based on active trading status and kept only traded currencies, 1,144. <br>
     
-    - Then, we dropped the 'IsTrading' columns and NaNs-containing rows and confirmed working algorithms for all included currencies. We ended up with 685 rows in 5 columns. 
+        |![Actively Traded Cryptocurrencies DataFrame.](./Images/crypto_traded_df.png)|
+        |-|
     
-    ![No Null, Trading Cryptocurrencies DataFrame.](./Images/traded_nonull_df.png)
+    - Then, we dropped the 'IsTrading' columns and NaNs-containing rows and confirmed working algorithms for all included currencies. We ended up with 685 rows in 5 columns. <br>
     
-    - Additionally, we filtered for only mined currencies, meaning the total coins mined more than zero, and we ended up with 532 rows in 5 columns. 
+        |![No Null, Trading Cryptocurrencies DataFrame.](./Images/traded_nonull_df.png)|
+        |-|
     
-    ![Only Trading and Mined Cryptocurrencies DataFrame.](./Images/mined_traded_df.png)
+    - Additionally, we filtered for only mined currencies, meaning the total coins mined more than zero, and we ended up with 532 rows in 5 columns. <br>
     
-    - Furthermore, we separated the Coins' Names into their own DataFrame and dropped the 'CoinName' column from the features DataFrame since it would not be used in the clustering algorithm.
+        |![Only Trading and Mined Cryptocurrencies DataFrame.](./Images/mined_traded_df.png)|
+        |-|
     
-    ![Coins' Names DataFrame.](./Images/coin_name_df.png)
+    - Furthermore, we separated the Coins' Names into their own DataFrame and dropped the 'CoinName' column from the features DataFrame since it would not be used in the clustering algorithm.<br>  
+      
+        |![Coins' Names DataFrame.](./Images/coin_name_df.png)| ![The Features-Only Cryptocurrencies DataFrame.](./Images/mt_features_df.png) |
+        |-|-|
     
-    ![The Features-Only Cryptocurrencies DataFrame.](./Images/mt_features_df.png)
     
-    - Next, we transformed text variables into numerical values to be viable for use by the clustering algorithm, using the get_dummies method from the Pandas library. The transformation focused on 'Algorithm' and 'ProofType' columns, which increased the total number of feature columns from 4 to 98. 
     
-    ![Text Variables into Numerical Values.](./Images/X_dataframe.png)
     
-    - Finally, we scaled the features dataset using the StandarScaler model from the scikit-learn library. Using standardization, we center the feature columns at mean 0 with a standard deviation of 1 so that the feature columns take the form of a normal distribution, which makes it easier to learn the weights. Furthermore, standardization maintains useful information about outliers and makes the machine learning algorithm less sensitive to them.
     
-    ![Scaled Features Data.](./Images/X_scaled.png)
+    
+    - Next, we transformed text variables into numerical values to be viable for use by the clustering algorithm, using the get_dummies method from the Pandas library.<br> The transformation focused on 'Algorithm' and 'ProofType' columns, which increased the total number of feature columns from 4 to 98. <br>
+    
+        |![Text Variables into Numerical Values.](./Images/X_dataframe.png)|
+        |-|
+    
+    - Finally, we scaled the features dataset using the StandarScaler model from the scikit-learn library. <br> Using standardization, we center the feature columns at mean 0 with a standard deviation of 1 so that the feature columns take the form of a normal distribution, which makes it easier to learn the weights. <br>Furthermore, standardization maintains useful information about outliers and makes the machine learning algorithm less sensitive to them.<br>
+    
+        |![Scaled Features Data.](./Images/X_scaled.png)|
+        |-|
     
 
 
