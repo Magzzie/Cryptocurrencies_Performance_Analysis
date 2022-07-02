@@ -63,11 +63,6 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
         |![Coins' Names DataFrame.](./Images/coin_name_df.png)| ![The Features-Only Cryptocurrencies DataFrame.](./Images/mt_features_df.png) |
         |-|-|
     
-    
-    
-    
-    
-    
     - Next, we transformed text variables into numerical values to be viable for use by the clustering algorithm, using the get_dummies method from the Pandas library.<br> The transformation focused on 'Algorithm' and 'ProofType' columns, which increased the total number of feature columns from 4 to 98. <br>
     
         |![Text Variables into Numerical Values.](./Images/X_dataframe.png)|
@@ -84,6 +79,9 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
     - We imported the PCA model from the scikit-learn library, then fit and transformed the scaled data. 
     - After this dimensionality reduction, we get a smaller set of three dimensions called principal components. 
     - These new components are just the three main dimensions of variation that contain most of the information in the original dataset.
+    
+        |![Principal Components DataFrame.](./Images/X_pca_df.png)|
+        |-|
 
 
 
@@ -94,7 +92,7 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
 
 - The CryptoCompare dataset about cryptocurrencies initially contained 1,252 records. 
 - After preprocessing the dataset to apply Principal Component Analysis, we reduced it to 532 records of actively trading, mined cryptocurrency coins with confirmed algorithms. 
-- Each row in the features dataset contains information about the coin name, its working algorithm, whether it is trading, proof type, total number mined, and the total coin supply for each currency. 
+- Each row in the features dataset contains information about the trading coin name, its working algorithm, proof type, total number mined, and the total coin supply for each currency. 
 - The filtered data were then transformed entirely to numerical values, standardized with StandadScaler, then features were reduced from 98 to only three principal components. 
 
 
