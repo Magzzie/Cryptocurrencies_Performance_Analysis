@@ -135,7 +135,7 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
         |![One Class with an Outlier Cryptocurrency: BitTorrent](./Images/second_run/3D_scatter_plot2_outlier.png)|
         |-|
     
-    - Since we used a random state of zero for the unsupervised classification algorithm in this analysis, we expect different results every time the model is run. We tested the model more than once and collected a folder of first-run and second-run results in the following link: [K-means Classification Outputs.]()
+    - Since we used a random state of zero for the unsupervised classification algorithm in this analysis, we would expect different results every time the model is run. We tested the model more than once and collected a folder of first-run and second-run results in the following link: [K-means Classification Outputs.](https://github.com/Magzzie/Cryptocurrencies/tree/workingBranch/Images)
 
 - The Tradable Table displays all 532 records of currently trading cryptocurrencies according to the CryptoCompare dataset. 
     - The table allows for easy inspection of each currency record and the applied clustering per our K-means model.
@@ -143,7 +143,7 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
         |![Tradable Cryptocurrencies Table.](./Images/second_run/tradable_table2.png)|
         |-|
         
-    - The Tradable Table is accessible from the python code file: [crypto_clustering.ipynb](https://github.com/Magzzie/Cryptocurrencies/blob/main/crypto_clustering.ipynb)
+    - The Tradable Table is accessible from the python code file: [crypto_clustering.ipynb](https://github.com/Magzzie/Cryptocurrencies/blob/workingBranch/crypto_clustering.ipynb)
     
 - Lastly, the 2D scatter plot of the total number of mined coins against their supply for each traded cryptocurrency shows the four clusters and the outlier BitTorrent. 
     
@@ -153,9 +153,9 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
 
 ## Conclusions
 
-- Cryptocurrency mining is the process by which new bitcoins are entered into circulation. It is also the way the network confirms new transactions and is a critical component of the blockchain ledger's maintenance and development. Cryptocurrency mining is painstaking, costly, and only sporadically rewarding. Nonetheless, mining has a magnetic appeal for many investors who are interested in cryptocurrency because of the fact that miners receive rewards for their work with crypto tokens. [@](https://www.investopedia.com/tech/how-does-bitcoin-mining-work/#:~:text=Bitcoin%20mining%20is,with%20crypto%20tokens.)
-- When a cryptocurrency has been mined, miner revenue will depend entirely on transaction fees. The price and purchasing power of the mined currency will adjust to the lack of new supply. Hence, its scarcity will make it more attractive to investors and users.[@](https://river.com/learn/what-will-happen-after-all-bitcoin-mined/)
-- The maximum supply of a cryptocurrency refers to the maximum number of coins or tokens that will be ever created. This means that once the maximum supply is reached, there won't be any new coins mined, minted or produced in any other way.[@](https://academy.binance.com/en/glossary/maximum-supply#:~:text=The%20maximum%20supply%20of%20a%20cryptocurrency%20refers%20to%20the%20maximum%20number%20of%20coins%20or%20tokens%20that%20will%20be%20ever%20created.%20This%20means%20that%20once%20the%20maximum%20supply%20is%20reached%2C%20there%20won%E2%80%99t%20be%20any%20new%20coins%20mined%2C%20minted%20or%20produced%20in%20any%20other%20way.)
+- Cryptocurrency mining is the process by which new bitcoins are entered into circulation. It is also the way the network confirms new transactions and is a critical component of the blockchain ledger's maintenance and development. Cryptocurrency mining is painstaking, costly, and only sporadically rewarding. Nonetheless, mining has a magnetic appeal for many investors who are interested in cryptocurrency because of the fact that miners receive rewards for their work with crypto tokens. [@investopedia](https://www.investopedia.com/tech/how-does-bitcoin-mining-work/#:~:text=Bitcoin%20mining%20is,with%20crypto%20tokens.)
+- When a cryptocurrency has been mined, miner revenue will depend entirely on transaction fees. The price and purchasing power of the mined currency will adjust to the lack of new supply. Hence, its scarcity will make it more attractive to investors and users.[@river](https://river.com/learn/what-will-happen-after-all-bitcoin-mined/)
+- The maximum supply of a cryptocurrency refers to the maximum number of coins or tokens that will be ever created. This means that once the maximum supply is reached, there won't be any new coins mined, minted or produced in any other way.[@binance_academy](https://academy.binance.com/en/glossary/maximum-supply#:~:text=The%20maximum%20supply%20of%20a%20cryptocurrency%20refers%20to%20the%20maximum%20number%20of%20coins%20or%20tokens%20that%20will%20be%20ever%20created.%20This%20means%20that%20once%20the%20maximum%20supply%20is%20reached%2C%20there%20won%E2%80%99t%20be%20any%20new%20coins%20mined%2C%20minted%20or%20produced%20in%20any%20other%20way.)
 - BitTorrent is a trading cryptocurrency at max supply and nearly at maximum mining, making it a potentially beneficial inverstment for Accountability Accounting Bank's customers. 
 
 
