@@ -26,7 +26,7 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
 
 
 
-## Resources: 
+## Resources 
 - Data Sources: crypto_data.csv, crypto_clustering.ipynb.
 - Software & Framework: Python (3.7.13), Jupyter Notebook (6.4.11).
 - Libraries & Packages: Pandas (1.3.5), Plotly (5.9.0-py_0), hvPlot (0.8.0).
@@ -92,18 +92,26 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
         |-|
         
     - Using the suggested grouping of four clusters, we built an unsupervised machine learning model based on the K-means algorithm. 
+    - We specified a random state of zero in the classification algorithm, which would render different results between runs and users. 
     - Next, we fit, transformed, and made predictions on the scaled and standardized crypto data. 
     
-        |![K Means Clustering Algorithm Predictions Using 4 Clusters.](./Images/k4_predictions.png)|
+        |![K Means Clustering Algorithm Predictions Using 4 Clusters.](./Images/second_run/k4_predictions2.png)|
         |-|
         
     - Furthermore, we created a comprehensive DataFrame of the original four feature columns, their three resulting Principal Components, the corresponding coin name, and the class of each currency.
     
+4. Visualizing cryptocurrencies results:
+    - We used scatter plots and line graphs from the Plotly Express and hvPlot libraries.
+    - First, we created a three-dimensional (3D) scatter plot using the Plotly Express scatter_3d() function that showed the four clusters produced by the K-means model. This interactive graph can display coin information like the coin's name and working algorithm when hovered over. 
+    - Then, we created a table of all the presently tradable cryptocurrencies using hvplot.table() function. The table is sortable and selectable to facilitate inspection of the training data. 
+    - Next, we used the MinMaxScaler() model to scale the 'TotalCoinSupply' and 'TotalCoinsMined' columns between zero and one. Moreover, we created a DataFrame of the scaled data along with the coins' names and classes. 
+        
+        |![MinMax-Scaled Crypto DataFrame.](./Images/second_run/coin_class_df2.png)|
+        |-|
+        
+    - Eventually, we plotted the MinMax-scaled crypto data of Total Supply and Total Mined on a two-dimensional (2D) scatter plot using the hvPlot library and color-divided the classes. 
     
-
-
-
-
+    
 
 ## Results 
 
@@ -113,19 +121,42 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
 - The filtered data were then transformed entirely to numerical values, standardized with StandadScaler, then features were reduced from 98 to only three principal components. 
 - Based on the elbow curve plot, we classified the cryptocurrency data into four distinct clusters. 
 
-    |![Clustered DataFrame of Features, Principal Components, and Classes](./Images/clustered_df.png)|
+    |![Clustered DataFrame of Features, Principal Components, and Classes](./Images/second_run/clustered_df2.png)|
+    |-|
+    
+- The three-dimensional scatter plot represents the rendered classification of the currently tradable cryptocurrencies according to the CryptoCompare dataset. 
+    - The plot showed that the K-means classification algorithm had made a decent effort in grouping the data points into four clusters per our specification. 
+    
+        |![3D Scatter Plot of Traded Cryptocurrencies Clusters.](./Images/second_run/3D_scatter_plot2.png)|
+        |-|
+        
+    - Interestingly, BitTorrent was an obvious outlier among the tradable cryptocurrencies. The outlier was installed in a separate cluster by the K-means classification algorithm. 
+    
+        |![One Class with an Outlier Cryptocurrency: BitTorrent](./Images/second_run/3D_scatter_plot2_outlier.png)|
+        |-|
+    
+    - Since we used a random state of zero for the unsupervised classification algorithm in this analysis, we expect different results every time the model is run. We tested the model more than once and collected a folder of first-run and second-run results in the following link: [K-means Classification Outputs.]()
+
+- The Tradable Table displays all 532 records of currently trading cryptocurrencies according to the CryptoCompare dataset. 
+    - The table allows for easy inspection of each currency record and the applied clustering per our K-means model.
+    
+        |![Tradable Cryptocurrencies Table.](./Images/second_run/tradable_table2.png)|
+        |-|
+        
+    - The Tradable Table is accessible from the python code file: [crypto_clustering.ipynb](https://github.com/Magzzie/Cryptocurrencies/blob/main/crypto_clustering.ipynb)
+    
+- Lastly, the 2D scatter plot of the total number of mined coins against their supply for each traded cryptocurrency shows the four clusters and the outlier BitTorrent. 
+    
+    |![2D Scatter Plot of Mined Coins vs. Supply, Outlier.](./Images/second_run/2D_scatter_plot2_outlier.png)|
     |-|
 
 
+## Conclusions
 
-
-
-
-## Recommendations & Limitations
-
-
-
-
+- Cryptocurrency mining is the process by which new bitcoins are entered into circulation. It is also the way the network confirms new transactions and is a critical component of the blockchain ledger's maintenance and development. Cryptocurrency mining is painstaking, costly, and only sporadically rewarding. Nonetheless, mining has a magnetic appeal for many investors who are interested in cryptocurrency because of the fact that miners receive rewards for their work with crypto tokens. [@](https://www.investopedia.com/tech/how-does-bitcoin-mining-work/#:~:text=Bitcoin%20mining%20is,with%20crypto%20tokens.)
+- When a cryptocurrency has been mined, miner revenue will depend entirely on transaction fees. The price and purchasing power of the mined currency will adjust to the lack of new supply. Hence, its scarcity will make it more attractive to investors and users.[@](https://river.com/learn/what-will-happen-after-all-bitcoin-mined/)
+- The maximum supply of a cryptocurrency refers to the maximum number of coins or tokens that will be ever created. This means that once the maximum supply is reached, there won't be any new coins mined, minted or produced in any other way.[@](https://academy.binance.com/en/glossary/maximum-supply#:~:text=The%20maximum%20supply%20of%20a%20cryptocurrency%20refers%20to%20the%20maximum%20number%20of%20coins%20or%20tokens%20that%20will%20be%20ever%20created.%20This%20means%20that%20once%20the%20maximum%20supply%20is%20reached%2C%20there%20won%E2%80%99t%20be%20any%20new%20coins%20mined%2C%20minted%20or%20produced%20in%20any%20other%20way.)
+- BitTorrent is a trading cryptocurrency at max supply and nearly at maximum mining, making it a potentially beneficial inverstment for Accountability Accounting Bank's customers. 
 
 
 ---
