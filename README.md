@@ -29,8 +29,8 @@ First, we will use the K-means clustering algorithm to group the cryptocurrencie
 ## Resources 
 - Data Sources: crypto_data.csv, crypto_clustering.ipynb.
 - Software & Framework: Python (3.7.13), Jupyter Notebook (6.4.11).
-- Libraries & Packages: Pandas (1.3.5), Plotly (5.9.0-py_0), hvPlot (0.8.0).
-- Online Tools: [Cryptocurrencies GitHub repository](https://github.com/Magzzie/Cryptocurrencies)
+- Libraries & Packages: Pandas (1.3.5), Plotly (5.9.0-py_0), hvPlot (0.8.0), Scikit-learn, PCA, KMeans.
+- Online Tools: [Cryptocurrencies GitHub repository](https://github.com/Magzzie/Cryptocurrencies_Performance_Analysis)
 
 
 ## Methods & Code
